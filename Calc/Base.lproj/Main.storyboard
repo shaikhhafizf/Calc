@@ -338,6 +338,16 @@
                             <constraint firstItem="qfP-Ey-sQ9" firstAttribute="leading" secondItem="2ck-YM-j36" secondAttribute="leading" id="ljg-do-YHZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonContainer" destination="ZIE-9F-ATF" id="aQs-Y4-fef"/>
+                        <outletCollection property="operatorButtons" destination="l6t-Vt-Nsm" collectionClass="NSMutableArray" id="0VW-i0-Jmn"/>
+                        <outletCollection property="operatorButtons" destination="UxY-7B-Kwb" collectionClass="NSMutableArray" id="8Xt-ob-tDe"/>
+                        <outletCollection property="operatorButtons" destination="Fr8-kt-R50" collectionClass="NSMutableArray" id="eKM-aj-uwR"/>
+                        <outletCollection property="operatorButtons" destination="q3V-dg-dZL" collectionClass="NSMutableArray" id="ed4-on-TPK"/>
+                        <outletCollection property="operatorButtons" destination="hG5-ph-PUy" collectionClass="NSMutableArray" id="yZs-Tc-d8Y"/>
+                        <outletCollection property="operatorButtons" destination="IAj-PR-0Ak" collectionClass="NSMutableArray" id="Xmy-Fi-Oa8"/>
+                        <outletCollection property="operatorButtons" destination="Cdp-VA-WvW" collectionClass="NSMutableArray" id="mbw-dk-m8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
