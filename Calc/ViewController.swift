@@ -1,21 +1,62 @@
 //
 //  ViewController.swift
-//  Calc
+//  Calculator
 //
-//  Created by IRFAN SHAIKH on 2022-09-25.
-//
+//  Created by Amrik Singh on 2022-09-23.
+// Authors: Amrik Singh, Hafiz Shaikh, Brendan Rodrigues 301119016
+//Calculator app v 1.5
+// 24/09/2022
+// Basic Calculator app in portrait orientation
 
 import UIKit
 
 class ViewController: UIViewController {
     
+    // @author : Amrik Singh
     // button container to give round border
     @IBOutlet weak var buttonContainer: UIView!
+    
+    // @author: Hafiz Shaikh
 //    All operator button collection
     @IBOutlet var operatorButtons: [UIButton]!
+    
+    //@author: Brendan Rodrigues
+    
+    //empty string for storing values
+    var Math:String = ""
+    //output result
+    @IBOutlet weak var ResultLabel: UILabel!
+    
+    //appending function for string
+    func addtoMath (value: String){
+        Math = Math + value
+        ResultLabel.text = Math
+    }
+    // function for numerical input
+    @IBAction func Numericals(_ sender: UIButton){
+        let button = sender as UIButton
+        addtoMath(value: button.titleLabel!.text!)
+        }
+// function for all clear
+    @IBAction func AllClear(_ sender: UIButton) {
+        Math = ""
+        _ = sender as UIButton
+        ResultLabel.text = "0"
+    }
+    
+    //function for backspace
+    @IBAction func Backspace(_ sender: UIButton) {
+        if (!Math.isEmpty){
+            Math.removeLast()
+            ResultLabel.text = Math
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // @author: Hafiz Shaikh
         operatorButtons.forEach{(button) in
             
             // added round corners to Button Container
@@ -36,6 +77,7 @@ class ViewController: UIViewController {
 //        OpreatorButton.layer.cornerRadius=5
     }
 
+    
 
 }
 
