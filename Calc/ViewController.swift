@@ -3,7 +3,7 @@
 //  Calculator
 //
 //  Created by Amrik Singh on 2022-09-23.
-// Authors: Amrik Singh, Hafiz Shaikh 301282061, Brendan Rodrigues 301119016
+// Authors: Amrik Singh 301296257, Hafiz Shaikh 301282061, Brendan Rodrigues 301119016
 //Calculator app v 1.5
 // 24/09/2022
 // Basic Calculator app in portrait orientation
