@@ -22,35 +22,141 @@ class ViewController: UIViewController {
     
     //@author: Brendan Rodrigues
     
-    //empty string for storing values
-    var Math:String = ""
+    var leftside: Float = 0.0
+    var rightside: Float = 0.0
+    var result: Float = 0.0
+    
+    var activeOperator: String = ""
+    var haveLeftHandSide: Bool = false
+    var haveRightHandSide: Bool = false
+    var resultLabelReady: Bool = true
+    
+    
     //output result
     @IBOutlet weak var ResultLabel: UILabel!
+
     
-    //appending function for string
-    func addtoMath (value: String){
-        Math = Math + value
-        ResultLabel.text = Math
-    }
+    
     // function for numerical input
     @IBAction func Numericals(_ sender: UIButton){
         let button = sender as UIButton
-        addtoMath(value: button.titleLabel!.text!)
+   
+        let btnTxt = button.titleLabel?.text
+        
+        if(!resultLabelReady)
+        {
+            ResultLabel.text = "0"
+            resultLabelReady = true
         }
-// function for all clear
+        
+        switch(btnTxt)
+        {
+        case "." :
+            if(!ResultLabel.text!.contains("."))
+            {
+                ResultLabel.text?.append(".")
+            }
+        default :
+            if(ResultLabel.text == "0")
+            {
+                ResultLabel.text = btnTxt
+            }
+            else{
+                ResultLabel.text?.append(btnTxt!)
+            }
+        }
+        }
+    
+    //function for backspace button
+    @IBAction func ClearBtns(_ sender: UIButton) {
+        let button = sender as UIButton
+        _ = button.titleLabel?.text
+        
+        leftside = 0.0
+        rightside = 0.0
+        haveLeftHandSide = false
+        haveRightHandSide = false
+        resultLabelReady = true
+        activeOperator = ""
+        
+        if(ResultLabel.text!.count == 1)
+        {
+            ResultLabel.text = "0"
+        }
+        else
+        {
+            ResultLabel.text?.removeLast()
+        }
+    }
+    
+    // function for all clear
     @IBAction func AllClear(_ sender: UIButton) {
-        Math = ""
-        _ = sender as UIButton
         ResultLabel.text = "0"
     }
     
-    //function for backspace
-    @IBAction func Backspace(_ sender: UIButton) {
-        if (!Math.isEmpty){
-            Math.removeLast()
-            ResultLabel.text = Math
+    
+    @IBAction func EqualToBtn(_ sender: UIButton){
+        
+        let button = sender as UIButton
+        let btnText = button.titleLabel?.text
+        
+        
+        if(!haveLeftHandSide)
+        {
+            leftside = Float(ResultLabel.text!)!
+            haveLeftHandSide = true
+            resultLabelReady = false
         }
+        else
+        {
+            rightside = Float(ResultLabel.text!)!
+            haveRightHandSide = true
+            resultLabelReady = false
+        }
+        
+        if(haveLeftHandSide && haveRightHandSide)
+        {
+            Evaluate()
+        }
+        else {
+            if((!haveLeftHandSide)  && (ResultLabel.text  != "0"))
+            {
+                leftside = Float(ResultLabel.text!)!
+                haveLeftHandSide = true
+                
+            }
+            else if(haveLeftHandSide)
+            {
+                rightside = Float(ResultLabel.text!)!
+                haveRightHandSide = true
+            }
+        }
+        
+        switch(btnText)
+        {
+        case "+":
+            print(btnText as Any)
+            activeOperator = "+"
+            ResultLabel.text = "+"
+            print(leftside)
+            print(rightside)
+        case "-":
+            activeOperator = "-"
+        case "x":
+            activeOperator = "x"
+        case "/":
+            activeOperator = "/"
+        case "=":
+            if(haveLeftHandSide && haveRightHandSide)
+            {
+                Evaluate()
+            }
+        default:
+           print("Not Implimented")
+        }
+        
     }
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +184,63 @@ class ViewController: UIViewController {
     }
 
     
-
+    @IBAction func BtnPlusMinus(_ sender: UIButton) {
+        
+        if(ResultLabel.text!.contains("-")){
+            _ = ResultLabel.text
+            ResultLabel.text?.append("-")
+        }
+    }
+    
+    func Add(_ leftside: Float, _ rightside: Float) -> Float
+    {
+        return leftside + rightside
+    }
+    
+    func Subtract(_ leftside: Float, _ rightside: Float) -> Float
+    {
+        return leftside - rightside
+    }
+    
+    func Multiply(_ leftside: Float, _ rightside: Float) -> Float
+    {
+        return leftside * rightside
+    }
+    
+    func Divide(_ leftside: Float, _ rightside: Float) -> Float
+    {
+        return leftside / rightside
+    }
+    
+    
+    func Evaluate(){
+   
+        switch(activeOperator)
+        {
+        case "+":
+            result = Add(leftside,rightside)
+//            ResultLabel.text = String(Add(leftside,rightside))
+        case "-":
+            result = Subtract(leftside,rightside)
+//            ResultLabel.text = String(Subtract(leftside, rightside))
+        case "x":
+            result = Multiply(leftside,rightside)
+//            ResultLabel.text =  String(Multiply(leftside, rightside))
+        case "/":
+            result = Divide(leftside,rightside)
+//            ResultLabel.text =  String(Divide(leftside, rightside))
+        default:
+            result = 0.0
+        }
+        ResultLabel.text = String(result)
+        leftside = result
+        rightside = 0.0
+        haveLeftHandSide = true
+        haveRightHandSide = false
+        resultLabelReady = false
+        activeOperator = ""
+    }
+    
+    
 }
 
