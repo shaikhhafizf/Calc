@@ -36,8 +36,32 @@ class ViewController: UIViewController {
     @IBAction func Numericals(_ sender: UIButton){
         let button = sender as UIButton
         addtoMath(value: button.titleLabel!.text!)
+        
+        
         }
-// function for all clear
+     //function for decimal
+    @IBAction func Decimal(_ sender: UIButton) {
+        let button = sender as UIButton
+        let buttonText = button.titleLabel?.text
+        switch (buttonText){
+        case ".":
+            if (!ResultLabel.text!.contains("."))
+            {
+                addtoMath(value: button.titleLabel!.text!)
+            }
+        default:
+            if (ResultLabel.text == "0")
+            {
+                ResultLabel.text = buttonText
+            }
+            else
+            {
+                addtoMath(value: button.titleLabel!.text!)
+            }
+        }
+    }
+    
+    // function for all clear
     @IBAction func AllClear(_ sender: UIButton) {
         Math = ""
         _ = sender as UIButton
@@ -46,11 +70,17 @@ class ViewController: UIViewController {
     
     //function for backspace
     @IBAction func Backspace(_ sender: UIButton) {
-        if (!Math.isEmpty){
+        if (ResultLabel.text!.count == 1)
+        {
+            ResultLabel.text = "0"
+        }
+        else
+        {
             Math.removeLast()
             ResultLabel.text = Math
         }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
