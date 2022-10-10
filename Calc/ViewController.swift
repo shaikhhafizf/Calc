@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     //output result
     @IBOutlet weak var ResultLabel: UILabel!
-
+    
     
     
     // function for numerical input
@@ -185,10 +185,13 @@ class ViewController: UIViewController {
 
     
     @IBAction func BtnPlusMinus(_ sender: UIButton) {
-        
-        if(ResultLabel.text!.contains("-")){
-            _ = ResultLabel.text
-            ResultLabel.text?.append("-")
+     
+        if(!ResultLabel.text!.contains("-")){
+            let num = "-" + ResultLabel.text!
+            print(num)
+            
+            ResultLabel.text = num
+//            ResultLabel.text?.append("-")
         }
     }
     
