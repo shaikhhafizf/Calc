@@ -91,6 +91,13 @@ class ViewController: UIViewController {
     
     // function for all clear
     @IBAction func AllClear(_ sender: UIButton) {
+        leftside = 0.0
+        rightside = 0.0
+        haveLeftHandSide = false
+        haveRightHandSide = false
+        resultLabelReady = true
+        activeOperator = ""
+        
         ResultLabel.text = "0"
     }
     
