@@ -89,7 +89,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="AllClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xda-9Q-E5t"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyb-XD-S8j"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-7B-Kwb" userLabel="Extra">
@@ -141,12 +141,13 @@
                                                                 </constraints>
                                                                 <size key="titleShadowOffset" width="12" height="12"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="Group-1" title="">
-                                                                    <color key="baseForegroundColor" red="0.2235293984" green="0.2235293984" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="Group-1" title="%">
+                                                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                                                                    <color key="baseForegroundColor" red="0.94117647410000005" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <color key="baseBackgroundColor" red="0.94118624930000006" green="0.94117057319999997" blue="0.9452691674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8u-n9-A5u"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xm-vG-QEA"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnC-NN-pNx" userLabel="plusMinus">
@@ -223,7 +224,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4q-Vj-hzJ"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3b-8r-oAG"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-uq-dj5" userLabel="Extra">
@@ -238,7 +239,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qba-QE-Ca6"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="595-zQ-sgZ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXd-3O-oJC" userLabel="Extra">
@@ -253,7 +254,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZd-nz-K1E"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0b9-27-cge"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-Qd-dAq">
@@ -354,12 +355,13 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="wei-Cf-zVn"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="xY">
+                                                                <buttonConfiguration key="configuration" style="filled" image="xY" title="^2">
+                                                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="1"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbi-LK-auR"/>
+                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q59-8e-aJ0"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIZ-6e-5Mp" userLabel="extra">
@@ -368,7 +370,9 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="gaK-6Q-w55"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="x3">
+                                                                <buttonConfiguration key="configuration" style="filled" image="x3" title="x3">
+                                                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="1"/>
+                                                                    <color key="baseForegroundColor" red="0.01176470611" green="0.054901964960000001" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
@@ -494,7 +498,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LvS-SO-IgN"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhh-jT-8kD"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUS-fT-Fqm" userLabel="extra">
@@ -503,12 +507,14 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="tiP-bz-dFf"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="la_square-root-alt-1">
+                                                                <buttonConfiguration key="configuration" style="filled" image="la_square-root-alt-1" title="cbrt">
+                                                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="1"/>
+                                                                    <color key="baseForegroundColor" red="0.01176470611" green="0.054901964960000001" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhZ-uR-g5b"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aA6-Ie-BVj"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bib-gv-yXd" userLabel="extra">
@@ -517,7 +523,9 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="OCu-o9-Cqg"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="la_square-root-alt-2">
+                                                                <buttonConfiguration key="configuration" style="filled" image="la_square-root-alt-2" title="sqrt">
+                                                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="1"/>
+                                                                    <color key="baseForegroundColor" red="0.01176470611" green="0.054901964960000001" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
@@ -624,13 +632,14 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="c69-HI-3cP"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" title="e">
+                                                                <buttonConfiguration key="configuration" style="filled" title="e" subtitle="2.7182818285">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                                                    <fontDescription key="subtitleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="1"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agP-uo-7TQ"/>
+                                                                    <action selector="e:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gky-cj-iOZ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-Zi-bx3" userLabel="Extra">
@@ -639,12 +648,14 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="sly-vF-Riy"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="Loge">
+                                                                <buttonConfiguration key="configuration" style="filled" image="Loge" title="0.4342944819">
+                                                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="1"/>
+                                                                    <color key="baseForegroundColor" red="0.01176470611" green="0.054901964960000001" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2l-IE-TyF"/>
+                                                                    <action selector="Log_e:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybM-Wv-R3y"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sna-51-qn1" userLabel="Extra">
@@ -653,7 +664,8 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="tMx-tX-SKy"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="Loge" title="">
+                                                                <buttonConfiguration key="configuration" style="filled" title="Log">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
