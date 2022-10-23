@@ -190,6 +190,12 @@ class ViewController: UIViewController {
         case "^":
             activeOperator = "^"
             ResultLabel.text = "^"
+        case "x2":
+            activeOperator = "x2"
+            ResultLabel.text = "x:"
+        case "x3":
+            activeOperator = "x3"
+            ResultLabel.text = "x:"
         case "=":
             if(haveLeftHandSide && haveRightHandSide)
             {
@@ -240,6 +246,10 @@ class ViewController: UIViewController {
         ResultLabel.text = button.titleLabel!.text
     }
     
+    @IBAction func Pi(_ sender: UIButton) {
+        let button = sender as UIButton
+        ResultLabel.text = button.subtitleLabel!.text
+    }
     
     @IBAction func BtnPlusMinus(_ sender: UIButton) {
      
@@ -312,9 +322,19 @@ class ViewController: UIViewController {
         return log10(rightside)
     }
     
-    func Sq(_ leftside: Float, _ rightside: Float) -> Float
+    func Power(_ leftside: Float, _ rightside: Float) -> Float
     {
         return pow(leftside, rightside)
+    }
+    
+    func x2(_ rightside: Float) -> Float
+    {
+        return pow(rightside, 2)
+    }
+    
+    func x3(_ rightside: Float) -> Float
+    {
+        return pow (rightside, 3)
     }
     
     func Evaluate(){
@@ -358,8 +378,14 @@ class ViewController: UIViewController {
             result = Log10(rightside)
 //             ResultLabel.text = String(Log(rightside))
         case "^":
-            result = Sq(leftside, rightside)
+            result = Power(leftside, rightside)
 //  ResultLabel.text = String(^(rightside))
+        case "x2":
+            result = x2(rightside)
+//  ResultLabel.text = String(x2(rightside))
+        case "x3":
+            result = x3(rightside)
+//  ResultLabel.text = String(x3(rightside))
         default:
             result = 0.0
         }
