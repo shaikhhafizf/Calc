@@ -103,7 +103,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="BtnPlusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leB-yq-zkm"/>
+                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjH-Iw-kkz"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-kt-R50" userLabel="Extra">
@@ -118,7 +118,7 @@
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLh-Pm-44e"/>
+                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7SW-NC-fq4"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUr-Ca-3Vn" userLabel="clearAll">
@@ -355,13 +355,13 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="wei-Cf-zVn"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="xY" title="^2">
+                                                                <buttonConfiguration key="configuration" style="filled" image="xY" title="^">
                                                                     <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="1"/>
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
                                                                 <connections>
-                                                                    <action selector="Numericals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q59-8e-aJ0"/>
+                                                                    <action selector="EqualToBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QP-6x-x6t"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIZ-6e-5Mp" userLabel="extra">

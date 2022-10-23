@@ -181,6 +181,15 @@ class ViewController: UIViewController {
         case "Log":
             activeOperator = "Log"
             ResultLabel.text = "Log"
+        case "(":
+            activeOperator = "("
+            ResultLabel.text = "("
+        case ")":
+            activeOperator = ")"
+            ResultLabel.text = ")"
+        case "^":
+            activeOperator = "^"
+            ResultLabel.text = "^"
         case "=":
             if(haveLeftHandSide && haveRightHandSide)
             {
@@ -303,6 +312,11 @@ class ViewController: UIViewController {
         return log10(rightside)
     }
     
+    func Sq(_ leftside: Float, _ rightside: Float) -> Float
+    {
+        return pow(leftside, rightside)
+    }
+    
     func Evaluate(){
    
         switch(activeOperator)
@@ -342,7 +356,10 @@ class ViewController: UIViewController {
 //            ResultLabel.text = String(Tangent(rightside))
         case "Log":
             result = Log10(rightside)
-//             ResultLabel.text = String(Tangent(rightside))
+//             ResultLabel.text = String(Log(rightside))
+        case "^":
+            result = Sq(leftside, rightside)
+//  ResultLabel.text = String(^(rightside))
         default:
             result = 0.0
         }
