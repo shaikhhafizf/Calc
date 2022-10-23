@@ -386,7 +386,7 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="mms-Rt-b9F"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="filled" image="xY">
+                                                                <buttonConfiguration key="configuration" style="filled" image="x2">
                                                                     <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </buttonConfiguration>
                                                                 <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
@@ -876,6 +876,7 @@
         <image name="la_square-root-alt" width="34" height="34"/>
         <image name="la_square-root-alt-1" width="33" height="34"/>
         <image name="la_square-root-alt-2" width="33" height="34"/>
+        <image name="x2" width="22" height="20"/>
         <image name="x3" width="22" height="20"/>
         <image name="xY" width="22" height="19"/>
         <systemColor name="labelColor">
